@@ -155,95 +155,119 @@ const DesktopOnly = () => {
     <Padding layout="md">
       <PanelList>
         <AnimatedPanel
-          title="Social"
+          title="Case Studies"
           expanded
           actions={[
-            <ActionButton
-              onActivate={() => visit("https://twitter.com/vivavolt", 300)}
-              index={0}
-              key={0}
-              activationKey="T"
-            >
-              twitter
-            </ActionButton>,
-            <ActionButton
-              onActivate={() =>
-                visit("https://shimmeringvoid.substack.com/", 300)
-              }
-              index={0}
-              key={0}
-              activationKey="K"
-            >
-              substack
-            </ActionButton>,
-            <ActionButton
-              onActivate={() => visit("https://github.com/bfollington", 300)}
-              index={1}
-              key={1}
-              activationKey="G"
-            >
-              github
-            </ActionButton>,
-            <ActionButton
-              onActivate={() => visit("https://www.are.na/ben-follington", 300)}
-              index={2}
-              key={2}
-              activationKey="A"
-            >
-              are.na
-            </ActionButton>,
-            <ActionButton
-              onActivate={() => visit("https://twopm.itch.io/", 300)}
-              index={3}
-              key={3}
-              activationKey="I"
-            >
-              itch.io
-            </ActionButton>,
-            <ActionButton
-              onActivate={() =>
-                visit("https://www.shadertoy.com/user/vivavolt", 300)
-              }
-              index={4}
-              key={4}
-              activationKey="D"
-            >
-              shadertoy
-            </ActionButton>,
-            <ActionButton
-              onActivate={() =>
-                visit("https://codesandbox.io/u/bfollington", 300)
-              }
-              index={5}
-              key={5}
-              activationKey="B"
-            >
-              codesandbox
-            </ActionButton>,
-            <ActionButton
-              onActivate={() =>
-                visit(
-                  "https://www.youtube.com/channel/UCDoPS90Bk_u5isrlSKWCJiA",
-                  300
-                )
-              }
-              index={6}
-              key={6}
-              activationKey="U"
-            >
-              youtube
-            </ActionButton>,
-            <ActionButton
-              onActivate={() => visit("https://twitch.tv/vivavolt", 300)}
-              index={7}
-              key={7}
-              activationKey="W"
-            >
-              twitch
-            </ActionButton>,
+            // <ActionButton
+            //   onActivate={() => visit("https://twitter.com/vivavolt", 300)}
+            //   index={0}
+            //   key={0}
+            //   activationKey="T"
+            // >
+            //   twitter
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() =>
+            //     visit("https://shimmeringvoid.substack.com/", 300)
+            //   }
+            //   index={0}
+            //   key={0}
+            //   activationKey="K"
+            // >
+            //   substack
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() => visit("https://github.com/bfollington", 300)}
+            //   index={1}
+            //   key={1}
+            //   activationKey="G"
+            // >
+            //   github
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() => visit("https://www.are.na/ben-follington", 300)}
+            //   index={2}
+            //   key={2}
+            //   activationKey="A"
+            // >
+            //   are.na
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() => visit("https://twopm.itch.io/", 300)}
+            //   index={3}
+            //   key={3}
+            //   activationKey="I"
+            // >
+            //   itch.io
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() =>
+            //     visit("https://www.shadertoy.com/user/vivavolt", 300)
+            //   }
+            //   index={4}
+            //   key={4}
+            //   activationKey="D"
+            // >
+            //   shadertoy
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() =>
+            //     visit("https://codesandbox.io/u/bfollington", 300)
+            //   }
+            //   index={5}
+            //   key={5}
+            //   activationKey="B"
+            // >
+            //   codesandbox
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() =>
+            //     visit(
+            //       "https://www.youtube.com/channel/UCDoPS90Bk_u5isrlSKWCJiA",
+            //       300
+            //     )
+            //   }
+            //   index={6}
+            //   key={6}
+            //   activationKey="U"
+            // >
+            //   youtube
+            // </ActionButton>,
+            // <ActionButton
+            //   onActivate={() => visit("https://twitch.tv/vivavolt", 300)}
+            //   index={7}
+            //   key={7}
+            //   activationKey="W"
+            // >
+            //   twitch
+            // </ActionButton>,
           ]}
-        ></AnimatedPanel>
-        <AnimatedPanel
+        >            
+          <Text>
+            Australia Post
+            <ul>Refactoring Teradata to Google Cloud and BigQuery
+              <li>dbt</li>
+              <li>bigquery</li>
+            </ul>
+             
+          </Text>
+          <Text>
+            Notion.ai 
+            <ul>Generate unique insights into the worlds largest content database
+              <li> Google Kubernetes Engine </li>
+              <li> Cloud Spanner </li>
+            </ul>
+          </Text>
+          <Text>
+            Government agency
+            <ul> Reporting platform on BigQuery 
+              <li>dbt</li>
+              <li>prefect.io</li>
+              <li>gitlab</li>
+            </ul>
+          </Text>
+        </AnimatedPanel>
+        {/* <AnimatedPanel
           title="Generative Art"
           actions={[
             <ActionButton
@@ -280,7 +304,7 @@ const DesktopOnly = () => {
               instagram
             </ActionButton>,
           ]}
-        ></AnimatedPanel>
+        ></AnimatedPanel> */}
         <AnimatedPanel
           title="View Source"
           toggleable={false}
@@ -374,11 +398,11 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>
-          Ben Follington - generalist designer, programmer and artist
+          Gamma Data - Data Platform Builders
         </title>
         <meta
           name="description"
-          content="Ben Follington: generalist designer, programmer and artist making cool stuff with computers."
+          content="Allow us to help with your Cloud-native Data Platform implementation and strategy"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -412,7 +436,7 @@ const Home: NextPage = () => {
 
       <VersionTag>
         <Text>
-          bf.wtf
+          gammadata.io
           {" " + pkg.version}
         </Text>
       </VersionTag>
@@ -450,7 +474,8 @@ const Home: NextPage = () => {
             <Padding layout="md">
               <PanelList>
                 <Panel title="BF.WTF">
-                  <Text>Welcome.</Text>
+                  <Text>Welcome to Gamma Data .</Text>
+                  <Text><br/>We Build Data Platforms for the Enterprise</Text>
                   <br />
                   <ActionButton
                     onActivate={() => {
@@ -461,9 +486,9 @@ const Home: NextPage = () => {
                     }}
                     index={0}
                     key={0}
-                    activationKey="A"
+                    activationKey="E"
                   >
-                    activate
+                    enter
                   </ActionButton>
                 </Panel>
               </PanelList>
@@ -489,19 +514,20 @@ const Home: NextPage = () => {
                 <PanelList>
                   <AnimatedPanel title="Welcome">
                     <Text>
-                      Hi, I&apos;m Ben Follington. I&apos;m a generalist
-                      designer, programmer and artist living in Brisbane,
-                      Australia. I spend my time thinking about and working on:
+                      Hi, you&apos;ve landed on Gamma Data&apos;s page.
+                      <br/> <br/>
+                      We are Data Specialists for the Cloud, located in
+                      Melbourne, Australia. We spend most of our time 
+                      thinking about, and working on:
                       <ul>
-                        <li>video game design and development</li>
-                        <li>humanistic user interfaces</li>
-                        <li>generative art</li>
+                        <li>strategic platform oversight</li>
+                        <li>building out data-centric infrastructure</li>
+                        <li>modelling your data for lightning-fast reports</li>
                         <li>software &amp; process architecture</li>
-                        <li>freelance creative consulting</li>
+                        <li>staff augmentation &amp; department review</li>
                         <li>learning and education</li>
                       </ul>
-                      But, mostly, I use computers to help people think clearly
-                      and feel deeply.
+                      
                     </Text>
                   </AnimatedPanel>
 
@@ -509,12 +535,12 @@ const Home: NextPage = () => {
                     title="Work"
                     actions={[
                       <ActionButton
-                        onActivate={() => visit("https://cv.bf.wtf", 300)}
+                        onActivate={() => visit("https://www.linkedin.com/company/gamma-data/", 300)}
                         index={0}
                         key={0}
                         activationKey="C"
                       >
-                        cv
+                        linkedIn
                       </ActionButton>,
                       <ActionButton
                         onActivate={() =>
@@ -527,34 +553,42 @@ const Home: NextPage = () => {
                         github
                       </ActionButton>,
                       <ActionButton
-                        onActivate={() => visit("mailto:work@bf.wtf", 300)}
+                        onActivate={() => visit("mailto:info@gammadata.io", 300)}
                         index={1}
                         key={1}
-                        activationKey="E"
+                        activationKey="A"
                       >
-                        email me
+                        email us
                       </ActionButton>,
                     ]}
                   >
                     <Text>
-                      I will be open for freelance and contract work in Q4 2022.
+                      The Gamma Data team is open to all types of data-driven work.
                     </Text>
                     <br />
                     <Text>
+                      If you're looking for someone to bring your Data strategy vision
+                      to life, then do reach out.
                       If you&apos;re looking for someone to help bring your
-                      vision to life then please, do reach out. I&apos;m always
-                      excited to see what others are building.
+                      vision to life then please, do reach out.
                     </Text>
                     <br />
                     <Text>
-                      I have many years of experience building apps and games
-                      end-to-end, for both myself and others. I prefer working
-                      on the frontier. Regardless of the project, I strive for
-                      clear communication, enthusaistic progress and microscopic
-                      attention to detail.
+                      We are experts in:
+                      <ul>
+                        <li>Cloud, especially Google Cloud. Our team can help with green 
+                           field cloud projects, hybrid or multi-cloud implementations, 
+                           or migrations between major cloud providers.</li>
+                        <li>Data. Delivering end to end data solutions including channel solutions, 
+                            reporting systems and advanced analytics applications.</li>
+                        <li>Engineering. From automating infrastructure, platform and 
+                            application deployment to test automation to continuous security and compliance, 
+                             we can help you build a world class platform, data and machine 
+                             learning engineering capability and culture.</li>
+                      </ul>
                     </Text>
                   </AnimatedPanel>
-                  <AnimatedPanel
+                  {/* <AnimatedPanel
                     title="Projects"
                     actions={[
                       <ActionButton
@@ -603,7 +637,7 @@ const Home: NextPage = () => {
                       games, release OSS and write about programming, art, life,
                       philosophy and meditation.
                     </Text>
-                  </AnimatedPanel>
+                  </AnimatedPanel> */}
 
                   <AnimatedPanel
                     title="Support Me"
