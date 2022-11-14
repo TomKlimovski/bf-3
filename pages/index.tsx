@@ -664,7 +664,7 @@ const Home: NextPage = () => {
                         key={1}
                         activationKey="4"
                       >
-                        donate $
+                        donate $$
                       </ActionButton>,
                     ]}
                   ></AnimatedPanel>
