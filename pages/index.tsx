@@ -567,7 +567,7 @@ const Home: NextPage = () => {
                     </Text>
                     <br />
                     <Text>
-                      If you're looking for someone to bring your Data strategy vision
+                      If you&apos;re looking for someone to bring your Data strategy vision
                       to life, then do reach out.
                       If you&apos;re looking for someone to help bring your
                       vision to life then please, do reach out.
