@@ -48,6 +48,7 @@ export const Panel = styled("fieldset", {
   "& + &": {
     marginTop: "$space$2",
   },
+  length: 0
 });
 
 const panelListVariants = {
@@ -136,6 +137,7 @@ export const PanelLegend = styled("legend", {
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000`,
+  length: 0
 });
 
 const flicker = keyframes({
@@ -185,6 +187,7 @@ export const Button = styled("button", {
       },
     },
   },
+  length: 0
 });
 
 export const PanelLegendExpandButton = styled(Button, {
@@ -206,6 +209,7 @@ export const PanelLegendExpandButton = styled(Button, {
     cursor: "pointer",
     textShadow: "none",
   },
+  length: 0
 });
 
 type ActionButtonProps = {
@@ -298,4 +302,5 @@ export const Text = styled("p", {
   margin: 0,
   fontFamily: "$font$fontFamily",
   fontSize: "$font$size",
+  length: 0
 });

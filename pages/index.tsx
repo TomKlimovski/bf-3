@@ -24,6 +24,7 @@ const Main = styled("main", {
   position: "fixed",
   margin: 0,
   padding: 0,
+  length: 0
 });
 
 const VersionTag = styled("div", {
@@ -33,6 +34,7 @@ const VersionTag = styled("div", {
   opacity: 0.3,
   color: "white",
   pointerEvents: "none",
+  length: 0
 });
 
 const PlayWithArtPrompt = styled("div", {
@@ -44,6 +46,7 @@ const PlayWithArtPrompt = styled("div", {
   opacity: 0.3,
   color: "white",
   pointerEvents: "none",
+  length: 0
 });
 
 const Overlay = styled("div", {
@@ -77,6 +80,7 @@ const Overlay = styled("div", {
       },
     },
   },
+  length: 0
 });
 
 const Padding = styled("div", {
@@ -95,12 +99,13 @@ const Padding = styled("div", {
       },
     },
   },
+  length: 0
 });
 
 const HudGrid = styled("div", {
   display: "grid",
   gridTemplateColumns: "25% 25% 25% 25%",
-  gridTemplateRows: "25% 25% 25% 25%",
+  gridTemplateRows: "auto",
 
   position: "fixed",
   pointerEvents: "none",
@@ -109,6 +114,7 @@ const HudGrid = styled("div", {
   left: 0,
   width: "100vw",
   height: "100vh",
+  length: 0
 });
 
 const OverlayRight = styled("div", {
@@ -138,6 +144,7 @@ const OverlayRight = styled("div", {
       },
     },
   },
+  length: 0
 });
 
 const visit = (url: string, delay: number = 0) => {
@@ -158,153 +165,40 @@ const DesktopOnly = () => {
           title="Case Studies"
           expanded
           actions={[
-            // <ActionButton
-            //   onActivate={() => visit("https://twitter.com/vivavolt", 300)}
-            //   index={0}
-            //   key={0}
-            //   activationKey="T"
-            // >
-            //   twitter
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() =>
-            //     visit("https://shimmeringvoid.substack.com/", 300)
-            //   }
-            //   index={0}
-            //   key={0}
-            //   activationKey="K"
-            // >
-            //   substack
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() => visit("https://github.com/bfollington", 300)}
-            //   index={1}
-            //   key={1}
-            //   activationKey="G"
-            // >
-            //   github
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() => visit("https://www.are.na/ben-follington", 300)}
-            //   index={2}
-            //   key={2}
-            //   activationKey="A"
-            // >
-            //   are.na
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() => visit("https://twopm.itch.io/", 300)}
-            //   index={3}
-            //   key={3}
-            //   activationKey="I"
-            // >
-            //   itch.io
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() =>
-            //     visit("https://www.shadertoy.com/user/vivavolt", 300)
-            //   }
-            //   index={4}
-            //   key={4}
-            //   activationKey="D"
-            // >
-            //   shadertoy
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() =>
-            //     visit("https://codesandbox.io/u/bfollington", 300)
-            //   }
-            //   index={5}
-            //   key={5}
-            //   activationKey="B"
-            // >
-            //   codesandbox
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() =>
-            //     visit(
-            //       "https://www.youtube.com/channel/UCDoPS90Bk_u5isrlSKWCJiA",
-            //       300
-            //     )
-            //   }
-            //   index={6}
-            //   key={6}
-            //   activationKey="U"
-            // >
-            //   youtube
-            // </ActionButton>,
-            // <ActionButton
-            //   onActivate={() => visit("https://twitch.tv/vivavolt", 300)}
-            //   index={7}
-            //   key={7}
-            //   activationKey="W"
-            // >
-            //   twitch
-            // </ActionButton>,
           ]}
         >            
           <Text>
-            Australia Post
-            <ul>Refactoring Teradata to Google Cloud and BigQuery
+            <h2>Australia Post</h2>
+            --- <br />
+            Migrating Teradata to Google Cloud and BigQuery
+            <ul>
               <li>dbt</li>
               <li>bigquery</li>
+              <li>BKEY and BMAP migration</li>
             </ul>
              
           </Text>
           <Text>
-            Notion.ai 
-            <ul>Generate unique insights into the worlds largest content database
+            <a href="https://notion.ai" target="_blank" rel="noreferrer"><h2>Notion.ai </h2></a>
+             --- <br /> 
+            Generate unique insights into the worlds largest content database
+            <ul>
               <li> Google Kubernetes Engine </li>
               <li> Cloud Spanner </li>
             </ul>
           </Text>
           <Text>
-            Government agency
-            <ul> Reporting platform on BigQuery 
+            <h2>Government agency </h2>
+            --- <br />
+            Strategic Data Platform on BigQuery 
+            <ul> 
               <li>dbt</li>
               <li>prefect.io</li>
               <li>gitlab</li>
+              <li>salesforce</li>
             </ul>
           </Text>
         </AnimatedPanel>
-        {/* <AnimatedPanel
-          title="Generative Art"
-          actions={[
-            <ActionButton
-              onActivate={() =>
-                visit(
-                  "https://www.are.na/ben-follington/generative-art-xi7hppoqskq",
-                  300
-                )
-              }
-              index={0}
-              key={0}
-              activationKey="Y"
-            >
-              gallery
-            </ActionButton>,
-            <ActionButton
-              onActivate={() =>
-                visit("https://www.fxhash.xyz/u/shimmeringvoid", 300)
-              }
-              index={1}
-              key={1}
-              activationKey="H"
-            >
-              fxhash
-            </ActionButton>,
-            <ActionButton
-              onActivate={() =>
-                visit("https://www.instagram.com/shimmeringvoid/", 300)
-              }
-              index={2}
-              key={2}
-              activationKey="M"
-            >
-              instagram
-            </ActionButton>,
-          ]}
-        ></AnimatedPanel> */}
         <AnimatedPanel
           title="View Source"
           toggleable={false}
@@ -324,7 +218,7 @@ const DesktopOnly = () => {
           <Text>
             View the code for this site on github, it&apos;s built with react,
             next.js, stitchesjs, react-three-fiber, react-spring, framer-motion,
-            zzfx and love.
+            zzfx and rage.
           </Text>
         </AnimatedPanel>
       </PanelList>
@@ -343,6 +237,7 @@ const Visibility = styled("div", {
       },
     },
   },
+  length: 0
 });
 
 const Greetings = styled("div", {
@@ -361,6 +256,7 @@ const Greetings = styled("div", {
       },
     },
   },
+  length: 0
 });
 
 const Maximised = styled("div", {
@@ -382,6 +278,7 @@ const Maximised = styled("div", {
       },
     },
   },
+  length: 0
 });
 
 const Home: NextPage = () => {
@@ -510,7 +407,7 @@ const Home: NextPage = () => {
                 "@bp3": "lg",
               }}
             >
-              <Padding layout="md">
+              <Padding layout="md" className="special">
                 <PanelList>
                   <AnimatedPanel title="Welcome">
                     <Text>
@@ -588,87 +485,51 @@ const Home: NextPage = () => {
                       </ul>
                     </Text>
                   </AnimatedPanel>
-                  {/* <AnimatedPanel
-                    title="Projects"
-                    actions={[
-                      <ActionButton
-                        onActivate={() =>
-                          visit(
-                            "https://store.steampowered.com/app/1274210/The_Song_of_the_Fae/",
-                            300
-                          )
-                        }
-                        index={0}
-                        key={0}
-                        activationKey="S"
-                      >
-                        the song of the fae
-                      </ActionButton>,
-                      <ActionButton
-                        onActivate={() =>
-                          visit("https://shimmeringvoid.substack.com/", 300)
-                        }
-                        index={1}
-                        key={1}
-                        activationKey="V"
-                      >
-                        shimmeringvoid
-                      </ActionButton>,
-                      <ActionButton
-                        onActivate={() => visit("https://twopm.studio", 300)}
-                        index={2}
-                        key={2}
-                        activationKey="P"
-                      >
-                        twopm studios
-                      </ActionButton>,
-                      <ActionButton
-                        onActivate={() => visit("https://fundamental.sh", 300)}
-                        index={3}
-                        key={3}
-                        activationKey="F"
-                      >
-                        fundamental.sh
-                      </ActionButton>,
-                    ]}
-                  >
-                    <Text>
-                      In my &quot;spare&quot; time I develop commercial and free
-                      games, release OSS and write about programming, art, life,
-                      philosophy and meditation.
-                    </Text>
-                  </AnimatedPanel> */}
-
                   <AnimatedPanel
-                    title="Support Me"
+                    title="Our Blog"
                     toggleable={false}
                     actions={[
                       <ActionButton
-                        onActivate={() =>
-                          visit(
-                            "https://www.blockchain.com/eth/address/0x981e493b795A7a28c43Bf8d7a8E125C419435Fa7",
-                            300
-                          )
-                        }
-                        index={0}
-                        key={0}
-                        activationKey="3"
-                      >
-                        donate ETH
-                      </ActionButton>,
+                          onActivate={() =>
+                            visit("https://medium.com/gammadata", 300)
+                          }
+                          index={1}
+                          key={1}
+                          activationKey="M"
+                        >
+                        medium 
+                        </ActionButton>,
                       <ActionButton
-                        onActivate={() =>
-                          visit("https://ko-fi.com/vivavolt", 300)
-                        }
-                        index={1}
-                        key={1}
-                        activationKey="4"
-                      >
-                        donate $$
-                      </ActionButton>,
+                      onActivate={() =>
+                        visit("https://fullstackchronicles.io/", 300)
+                      }
+                      index={1}
+                      key={1}
+                      activationKey="F"
+                    >
+                    full stack chronicles 
+                    </ActionButton>                        
                     ]}
-                  ></AnimatedPanel>
+                    >
+                    <Text>
+                      <b>Apache Iceberg and Google Cloud</b>
+                      <br /> --- <br />
+                      Wanted to time-travel, query a lake at a point-in-time, 
+                      and support schema evolution effortlessly? Then read on... 
+                      <a href='https://medium.com/gammadata/apache-iceberg-and-google-cloud-239b1ae9fceb'> [link] </a>
+                    </Text>
+                    <Text>
+                      <br />
+                      <b>Serving dbt docs on Gitlab (Static) Pages</b>
+                      <br /> --- <br />
+                      Want a true static page, and not have to run `dbt run server` so you can host
+                      on Gitlab or Github?
+                      <a href='https://medium.com/gammadata/serving-dbt-docs-on-gitlab-static-pages-3365416c8b22'> [link] </a>
 
+                      <br /> <br />more...
+                    </Text>
+
+                  </AnimatedPanel>
                   <AnimatedPanel
                     title="Explore Mode"
                     toggleable={false}
