@@ -205,7 +205,7 @@ const DesktopOnly = () => {
           actions={[
             <ActionButton
               onActivate={() =>
-                visit("https://github.com/bfollington/bf-3", 300)
+                visit("https://github.com/TomKlimovski/bf-3/blob/main/pages/index.tsx", 300)
               }
               index={0}
               key={0}
@@ -437,11 +437,11 @@ const Home: NextPage = () => {
                         key={0}
                         activationKey="C"
                       >
-                        linkedIn
+                        linkedin
                       </ActionButton>,
                       <ActionButton
                         onActivate={() =>
-                          visit("https://github.com/bfollington", 300)
+                          visit("https://github.com/gamma-data", 300)
                         }
                         index={1}
                         key={1}
@@ -466,22 +466,27 @@ const Home: NextPage = () => {
                     <Text>
                       If you&apos;re looking for someone to bring your Data strategy vision
                       to life, then do reach out.
-                      If you&apos;re looking for someone to help bring your
-                      vision to life then please, do reach out.
                     </Text>
                     <br />
                     <Text>
                       We are experts in:
                       <ul>
-                        <li>Cloud, especially Google Cloud. Our team can help with green 
+                        <li><b>☁️ Cloud, especially Google Cloud. </b> <br /> 
+                           Our team can help with green 
                            field cloud projects, hybrid or multi-cloud implementations, 
                            or migrations between major cloud providers.</li>
-                        <li>Data. Delivering end to end data solutions including channel solutions, 
-                            reporting systems and advanced analytics applications.</li>
-                        <li>Engineering. From automating infrastructure, platform and 
-                            application deployment to test automation to continuous security and compliance, 
-                             we can help you build a world class platform, data and machine 
-                             learning engineering capability and culture.</li>
+                        <li><b>📊 Data.</b> <br /> 
+                           Delivering end to end data solutions including channel solutions, 
+                           reporting systems and advanced analytics applications.</li>
+                        <li><b> 🏗️ Engineering. </b>  <br />
+                           From automating infrastructure, platform and 
+                           application deployment to test automation to continuous security and compliance, 
+                           we can help you build a world class platform, data and machine 
+                           learning engineering capability and culture.</li>
+                        <li> <b> 🚆Training.</b> <br /> 
+                           We are one of two agencies in Australia that can boast a Google Developer Expert
+                           <i> and </i> authorised Google Trainer for your organisation
+                        </li>
                       </ul>
                     </Text>
                   </AnimatedPanel>
