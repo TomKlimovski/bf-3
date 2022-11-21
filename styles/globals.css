@@ -59,6 +59,7 @@ a {
 
 @media (max-width: 675px)
 { 
-
-  .special {background-color: pink !important; display:none !important}
+  .special {
+    width: 100vw !important;
+  }
 }
