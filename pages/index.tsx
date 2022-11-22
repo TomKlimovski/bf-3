@@ -334,7 +334,8 @@ const Home: NextPage = () => {
       <VersionTag>
         <Text>
           gammadata.io
-          {" " + pkg.version}
+          {" " + pkg.version + " "}
+          <a href="https://forms.gle/UbdTJndFVoKihuQeA" >π</a>
         </Text>
       </VersionTag>
       <HudGrid className="hud">
@@ -570,6 +571,7 @@ const Home: NextPage = () => {
           </OverlayRight>
         )}
       </HudGrid>
+      
     </div>
   );
 };

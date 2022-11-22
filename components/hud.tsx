@@ -281,6 +281,7 @@ export const ActionButton = ({
 
   // Did I need to use my own library for this one key binding? No, not at all.
   useKeyDown(activationKey.charCodeAt(0), () => {
+    console.log('i clicked you XXXXX ' + activationKey + '\n')
     onClick();
   });
 
