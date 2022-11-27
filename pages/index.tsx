@@ -175,6 +175,7 @@ const DesktopOnly = () => {
               <li>dbt</li>
               <li>bigquery</li>
               <li>BKEY and BMAP migration</li>
+              <li>Looker Enterprise Rollout</li>
             </ul>
              
           </Text>
