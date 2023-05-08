@@ -528,6 +528,7 @@ const Home: NextPage = () => {
                       <br />
                     </Text>                    
                     <Text>
+                      <br />
                       <b>Apache Iceberg and Google Cloud</b>
                       <br /> --- <br />
                       Wanted to time-travel, query a lake at a point-in-time, 
