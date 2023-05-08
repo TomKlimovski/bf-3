@@ -522,10 +522,10 @@ const Home: NextPage = () => {
                       <b>Unveiling the Power of Service Account Impersonation in Google Cloud Platform</b>
                       <br /> --- <br />
                       Want to stop using service account keys at your command line? Would you like to run dbt from
-                      <br>
+                      <br />
                       your command line but impersonate the same service account that’s running your code in GCP?
                       <a href='https://medium.com/p/23c6adbf4355'> [link] </a>
-                      <br>
+                      <br />
                     </Text>                    
                     <Text>
                       <b>Apache Iceberg and Google Cloud</b>
