@@ -33,7 +33,7 @@ const VersionTag = styled("div", {
   bottom: "$2",
   opacity: 0.3,
   color: "white",
-  pointerEvents: "none",
+  pointerEvents: "auto",
   length: 0
 });
 
@@ -334,9 +334,8 @@ const Home: NextPage = () => {
 
       <VersionTag>
         <Text>
-          gammadata.io
-          {" " + pkg.version + " "}
-          <a href="https://forms.gle/UbdTJndFVoKihuQeA" >π</a>
+          gammadata pty ltd (ABN 42 638 543 674)<br />
+          <a href="https://forms.gle/UbdTJndFVoKihuQeA">[get in touch]</a>{ }<a href="https://forms.gle/UbdTJndFVoKihuQeA">[work with us]</a>
         </Text>
       </VersionTag>
       <HudGrid className="hud">
